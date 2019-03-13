@@ -5,7 +5,7 @@ import time
 import random
 import requests
 import datetime
-import config
+import Config
 import asyncio
 import aiohttp
 

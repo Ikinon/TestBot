@@ -116,3 +116,4 @@ dmypy.json
 #Other
 Config.py
 .venv/
+.idea/

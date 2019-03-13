@@ -2,7 +2,7 @@ import datetime
 
 from discord.ext import commands
 
-import config
+import Config
 
 
 class testbotBOT(commands.Bot):
@@ -16,6 +16,7 @@ class testbotBOT(commands.Bot):
         self.load_extension('Owner')
         self.load_extension('ModCmds')
         self.load_extension('Music')
+        self.load_extension('Cogs.MuteCommand')
 
     async def on_ready(self):
         print(f'Username: {self.user.name}')
@@ -58,4 +59,4 @@ async def __after_invoke(ctx):
             pass
 
 
-bot.run(config.TOKEN)
+bot.run(Config.TOKEN)
