@@ -1,1 +1,0 @@
-ping > coderes.txt
